@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Home</title>
+  <link rel="stylesheet" href="style1.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+    <div class="logo">
+        <img src="https://i.ibb.co/VWpTW3v0/IMG-20250831-184413.png" alt="Logo" class="logo-img">
+        My Portfolio
+      </div>
+    <div class="menu-toggle" id="menuToggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul id="navMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="achievements.html">Achievements</a></li>
+      <li><a href="future_goals.html">Future Goals</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  </header>
+  <main>
+    <div class="container">
+      <div class="text">
+        <h1>Hi,<br>I'm <span class="red-text">Niket</span>,<br>a Python dev with AI dreams.</h1>
+        <p>
+          With a strong foundation in Python and Django, I engineer efficient web solutions. 
+          I aim to integrate AI for crafting smarter, user-centric applications. 
+          Driven by creativity, I focus on building scalable solutions that make a difference.
+        </p>
+
+        <!-- Buttons row -->
+        <div class="button-row">
+          <button class="btn" onclick="window.location.href='tel:+919279796670'">Let's Talk !</button>
+          <div class="settings">
+            <i class="fas fa-cog" id="settingsIcon"></i>
+            <div class="settings-menu" id="settingsMenu">
+              <button id="themeToggle"><i class="fas fa-adjust"></i> Toggle Theme</button>
+              <button id="musicToggle"><i class="fas fa-music"></i> Toggle Music</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="image">
+        <img src="https://i.ibb.co/chZfQLVh/IMG-20250829-235022.png" title="Niket Thakur" alt="Niket Thakur">
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 My Portfolio. All rights reserved.</p>
+  </footer>
+
+  <!-- 🎵 Background Music -->
+  <audio id="bgMusic" loop autoplay>
+    <source src="https://www.bensound.com/bensound-music/bensound-slowmotion.mp3" type="audio/mp3">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+/* General Page Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0c0c0d;
+  color: white;
+}
+
+/* Header & Navigation */
+header {
+  background: #0c0c0d;
+  color: white;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: red;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between logo and text */
+}
+
+.logo-img {
+  width: 40px;  /* adjust size */
+  height: 40px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.4);
+}
+
+
+/* Navigation Links */
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: red;
+}
+
+/* Hamburger */
+/* .hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+} */
+
+/* Hamburger Icon */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Nav */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #111;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  }
+  nav ul.show {
+    display: flex;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
+
+
+/* Mobile Navigation */
+/* @media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+} */
+
+/* Achievements Section */
+.Achievements {
+  width: 100%;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.Achievements h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.Achievements p {
+  color: red;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.achievements-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.achievement-card {
+  background: #1a1a1d;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.achievement-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgb(225, 3, 3);
+}
+
+.achievement-card img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+.achievement-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.achievement-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 12px;
+}
+
+.achievement-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ff4d4d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.achievement-card a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: #0c0c0d;
+}

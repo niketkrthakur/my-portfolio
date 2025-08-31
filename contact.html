@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style6.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="https://i.ibb.co/VWpTW3v0/IMG-20250831-184413.png" alt="Logo" class="logo-img">
+        My Portfolio
+      </div>
+      <div class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="future_goals.html">Future Goals</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+  <div class="contact-hero">
+    
+    <!-- Left side image (swap order if you want on right) -->
+    <div class="contact-img">
+      <img src="https://i.ibb.co/VWpTW3v0/IMG-20250831-184413.png" alt="My Photo">
+    </div>
+
+    <!-- Right side contact form -->
+    <div class="contact-content">
+      <h1>Contact</h1>
+      <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="E-mail" required>
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button class="btn" type="submit">Send</button>
+      </form>
+
+      <p class="social-links">
+        Connect with me: <br>
+        <a href="https://www.linkedin.com/in/niket-thakur-389515285" target="_blank" class="linkedin">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn"> LinkedIn
+        </a>
+        <a href="https://github.com/niketkrthakur" target="_blank" class="github">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"> GitHub
+        </a>
+        <a href="mailto:niketkrthakur@gmail.com" class="email">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email"> Email
+        </a>
+      </p>
+    </div>
+  </div>
+</main>
+
+
+  <footer>
+    <p>© 2025 My Portfolio. All rights reserved.</p>
+  </footer>
+    <script src="menu.js"></script>
+</body>
+</html>
