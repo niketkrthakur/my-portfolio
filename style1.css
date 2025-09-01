@@ -382,19 +382,20 @@ nav ul li a:hover {
   }
 
     /* Fix collision on small screens */
+/* Prevent collision on mobile */
 @media (max-width: 480px) {
   .button-row {
-    flex-direction: column;   /* stack vertically */
-    align-items: center;      /* center align */
-    gap: 12px;                /* keep spacing */
+    flex-direction: row;   /* keep inline */
+    justify-content: center;
+    gap: 40px;             /* increase spacing */
   }
 
   .btn {
-    width: 90%;               /* make button wide on mobile */
+    flex-shrink: 0;        /* prevent button from shrinking */
   }
 
   .settings {
-    margin-top: 8px;          /* extra space below button */
+    flex-shrink: 0;        /* prevent settings icon from overlapping */
   }
 }
 
@@ -402,4 +403,5 @@ nav ul li a:hover {
   
 
 }
+
 
