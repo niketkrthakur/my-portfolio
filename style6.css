@@ -126,21 +126,27 @@ input:hover, textarea:hover {
 }
 
 .btn {
+  display: block;           /* makes it full block */
+  margin: 20px auto;        /* centers horizontally */
+  padding: 12px 20px;       /* balanced padding */
   background: red;
   color: white;
-  text-align: center;
-  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
   border: none;
   border-radius: 10px;
-  width: 50%;
+  width: 60%;               /* adjust width (looks nice on desktop & mobile) */
+  max-width: 250px;         /* prevents button from being too wide */
   cursor: pointer;
-  align-items: center;
-  margin-top: 10px;
-} 
+  text-align: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
 
 .btn:hover {
   background: darkred;
+  transform: scale(1.05);
 }
+
 
 a {
   text-decoration: none;
