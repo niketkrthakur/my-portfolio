@@ -39,12 +39,18 @@
     <!-- Right side contact form -->
     <div class="contact-content">
       <h1>Contact</h1>
-      <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <input type="text" name="name" placeholder="Full Name" required>
-        <input type="email" name="email" placeholder="E-mail" required>
-        <textarea name="message" placeholder="Message" required></textarea>
-        <button class="btn" type="submit">Send</button>
-      </form>
+      <!-- Inline message -->
+        <div id="formMessage" aria-live="polite"></div>
+        <!-- Formspree Form -->
+        <form action="https://formspree.io/f/mgvlzzjb?redirect=https://niketkrthakur.github.io/my-portfolio//thank-you.html" method="POST">
+          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="email" name="_replyto" placeholder="E-mail" required>
+          <textarea name="message" placeholder="Message" required></textarea>
+
+          <button class="btn" type="submit">Send</button>
+        </form>
+
+
 
       <p class="social-links">
         Connect with me: <br>
@@ -54,7 +60,7 @@
         <a href="https://github.com/niketkrthakur" target="_blank" class="github">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"> GitHub
         </a>
-        <a href="mailto:niketkrthakur24@gmail.com" class="email">
+        <a href="mailto:niketkrthakur@gmail.com" class="email">
           <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email"> Email
         </a>
       </p>
@@ -67,5 +73,6 @@
     <p>© 2025 My Portfolio. All rights reserved.</p>
   </footer>
     <script src="menu.js"></script>
+    <script src="mail.js"></script>
 </body>
 </html>
