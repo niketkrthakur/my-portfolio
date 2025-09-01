@@ -245,12 +245,6 @@ nav {
   padding: 8px 20px;
 }
 
-/* .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: red;
-} */
-
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -322,4 +316,13 @@ nav ul li a:hover {
   .menu-toggle {
     display: block; /* show hamburger */
   }
+
+  /* ✅ Force h1 and p left aligned */
+  .text h1,
+  .text p {
+    text-align: left;
+  }
+
+  
+
 }
