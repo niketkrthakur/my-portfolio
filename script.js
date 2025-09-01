@@ -44,3 +44,19 @@ menuToggle.addEventListener("click", () => {
     icon.classList.add("fa-bars");
   }
 });
+
+// Let's Talk button toggle
+const talkBtn = document.getElementById("talkBtn");
+const talkMenu = document.getElementById("talkMenu");
+
+talkBtn.addEventListener("click", () => {
+  talkMenu.classList.toggle("show");
+});
+
+// Close Talk Menu if clicked outside
+document.addEventListener("click", (e) => {
+  if (!talkBtn.contains(e.target) && !talkMenu.contains(e.target)) {
+    talkMenu.classList.remove("show");
+  }
+});
+

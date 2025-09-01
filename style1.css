@@ -195,6 +195,64 @@ body.light-mode .settings i:hover {
   color: red;
 }
 
+/* Let's Talk dropdown */
+.talk {
+  position: relative;
+}
+/* Prevent underline in Let's Talk */
+#talkBtn {
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Talk menu dropdown */
+.talk-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  color: red;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.talk-menu a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: black;
+}
+
+/* Settings dropdown */
+.settings-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: black;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.talk-menu a:hover {
+  color: red;
+}
+
+/* When "show" is added, dropdown becomes visible */
+.talk-menu.show {
+  display: block;
+}
+.settings-menu.show {
+  display: block;
+}
+
+
+
 /* 🔹 Responsive Breakpoints */
 @media (max-width: 1024px) {
   h1 {

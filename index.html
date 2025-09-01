@@ -40,17 +40,30 @@
         </p>
 
         <!-- Buttons row -->
-        <div class="button-row">
-          <button class="btn" onclick="window.location.href='tel:+919279796670'">Let's Talk !</button>
-          <div class="settings">
-            <i class="fas fa-cog" id="settingsIcon"></i>
+        <div class="button-row" style="display: flex; align-items: center; gap: 12px;">
+          
+          <!-- Let's Talk -->
+          <div class="talk-container" style="position: relative;">
+            <a href="#" id="talkBtn" class="btn">Let's Talk</a>
+            <div id="talkMenu" class="talk-menu">
+              <a href="tel:+919279796670">📞 Call Me</a>
+              <a href="mailto:niketkrthakur24@gmail.com">📧 Email Me</a>
+            </div>
+          </div>
+
+          <!-- Settings -->
+          <div class="settings" style="position: relative;">
+            <i class="fas fa-cog" id="settingsIcon" style="cursor:pointer;"></i>
             <div class="settings-menu" id="settingsMenu">
               <button id="themeToggle"><i class="fas fa-adjust"></i> Toggle Theme</button>
               <button id="musicToggle"><i class="fas fa-music"></i> Toggle Music</button>
             </div>
           </div>
+
         </div>
       </div>
+
+
 
       <div class="image">
         <img src="https://i.ibb.co/chZfQLVh/IMG-20250829-235022.png" title="Niket Thakur" alt="Niket Thakur">
