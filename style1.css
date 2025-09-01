@@ -381,6 +381,25 @@ nav ul li a:hover {
     text-align: left;
   }
 
+    /* Fix collision on small screens */
+@media (max-width: 480px) {
+  .button-row {
+    flex-direction: column;   /* stack vertically */
+    align-items: center;      /* center align */
+    gap: 12px;                /* keep spacing */
+  }
+
+  .btn {
+    width: 90%;               /* make button wide on mobile */
+  }
+
+  .settings {
+    margin-top: 8px;          /* extra space below button */
+  }
+}
+
+
   
 
 }
+
