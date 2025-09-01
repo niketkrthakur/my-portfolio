@@ -41,8 +41,11 @@ p {
   justify-content: right; 
   align-items: center;
   padding: 20px;
+ 
+
   
 }
+
 
 .image img {
   width: 500px;          
@@ -51,7 +54,6 @@ p {
   clip-path: polygon(20% 0%, 100% 0%, 75% 100%, 0% 100%);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(183, 3, 3, 0.892);
 }
 
 .image img:hover {
@@ -381,7 +383,6 @@ nav ul li a:hover {
     text-align: left;
   }
 
-    /* Fix collision on small screens */
 /* Prevent collision on mobile */
 @media (max-width: 480px) {
   .button-row {
@@ -400,8 +401,7 @@ nav ul li a:hover {
 }
 
 
+
   
 
 }
-
-
